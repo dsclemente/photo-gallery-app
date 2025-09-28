@@ -9,7 +9,14 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col size='6' >
+      <ion-col>
+        <ion-text color="primary">
+          <h1>Versão 1</h1>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size='6'>
         @for(photo of photoService.photos; track photo.webviewPath) {
         <ion-img [src]="photo.webviewPath" (click)="showActionSheet(photo, $index)"></ion-img>
         }
