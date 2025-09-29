@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "external:android": "ionic cap run android -l --external",
+    "run:android": "ionic cap run android -l --external",
     "appflow:build": "ionic build --prod"
   },
   "private": true,
